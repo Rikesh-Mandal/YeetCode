@@ -3,10 +3,10 @@
 def missingNumber(numbers):
     n = len(numbers)+1
     actualSum = sum(numbers)
-    expectedSum = (n*(n+1))/2
+    expectedSum = n * (n+1) // 2
     missingDigit = expectedSum - actualSum
-    return int(missingDigit)
+    return missingDigit
 
 
-numbasdfers = [1,2,3,4,5,7]
+numbasdfers = [1,2,3,5,4,7]
 print(missingNumber(numbasdfers))
